@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strchr - string character locator
+ * _strchr - locates a character in a string
  * @s: String
  * @c: character to search
  * Return: pointer to the first occurence of the character c in the string s
@@ -10,7 +10,7 @@
 char *_strchr(char *s, char c)
 {
 
-	while (*s != '\0') /*WHILE IS declared*/
+	while (*s != '\0') /*Declaring WHILE*/
 	{
 		if  (*s == c) /*if s == c*/
 		{
@@ -24,5 +24,5 @@ char *_strchr(char *s, char c)
 		return (s);
 	}
 	
-	return (0); /* values null*/
+	return (0);/* values null*/
 }
