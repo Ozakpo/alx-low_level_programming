@@ -11,8 +11,9 @@ int _evaluate(int num, int pSqrt)
 	if (pSqrt == 0 || pSqrt == 1)
 	
 		return (pSqrt);
+
 	else if ((num * num) < pSqrt)
-		return (_evaluate(num + 1);
+		return (_evaluate(num + 1, pSqrt));
 	
 else if (num * num == pSqrt)	/*Condition*/
 	return (1)
