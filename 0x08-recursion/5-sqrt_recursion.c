@@ -6,24 +6,18 @@
   *
   *Return: sqrt of number at -1 for error.
   */
-int helperFunction(int num, int pSqrt)
+int _evaluate(int num, int pSqrt)
 {
-	if ((pSqrt * pSqrt) == num)
-	{
+	if (pSqrt == 0 || pSqrt == 1)
+	
 		return (pSqrt);
-	}
-	else
-	{
-		if ((pSqrt * pSqrt) > num)
-			return (-1);
-		else
-			return (helperFunction(num, pSqrt + 1);
-	}
+	else if ((pSqrt * pSqrt) > num)
+		return (_evaluate(num + 1, pSqrt);
 }
 	int _sqrt_recursion(int n) /*returns the natural square root of a number*/
 	{
 	if (n < 0)
-	return (-1);
+	  return (-1);
 	else
-	return (helperFunction(n, 0));
+	  return (helperFunction(n, 0));
 	}
