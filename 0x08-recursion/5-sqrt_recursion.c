@@ -1,18 +1,18 @@
 #include "main.h"
 /**
-  *helperFunction - checks if sqrt of number exists
+  *_evaluate - checks if sqrt of number exists
   *@num: number.
   *@pSqrt: possible sqrt of number.
   *
-  *Return: sqrt of number at -1 for error.
+  *Return: sqrt of number evaluated.
   */
-int helperFunction(int num, int pSqrt)
+int _evaluate(int num, int pSqrt)
 {
-	if ((pSqrt * pSqrt) == num)
+	if (pSqrt == 0 || pSqrt == 1)
 	{
 		return (pSqrt);
-	else if ((pSqrt * pSqrt) > num)
-		return (-1);
+	else if ((num * num) < pSqrt)
+		return (_evaluate(num + 1);
 	else 
 		return (helperFunction(num, pSqrt + 1));
 	}
@@ -28,5 +28,5 @@ int helperFunction(int num, int pSqrt)
 	if (n < 0)
 	  return (-1);
 	else
-	  return (helperFunction(n, 0));
+	  return (_evaluate(n, 0));
 	}
